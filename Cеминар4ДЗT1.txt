@@ -1,0 +1,42 @@
+Task1
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Опыт работы</title>
+    <script>
+        // Формирование массива с данными
+        var experienceData = [
+            {
+                company: "Компания 1",
+                position: "Должность 1",
+                duration: "Период работы 1"
+            },
+            {
+                company: "Компания 2",
+                position: "Должность 2",
+                duration: "Период работы 2"
+            },
+            {
+                company: "Компания 3",
+                position: "Должность 3",
+                duration: "Период работы 3"
+            }
+        ];
+
+        // Вывод данных массива в HTML-шаблоне
+        window.onload = function() {
+            var experienceList = document.getElementById("experience-list");
+
+            experienceData.forEach(function(item) {
+                var listItem = document.createElement("li");
+                listItem.innerHTML = "<strong>" + item.position + "</strong> в " + item.company + ", " + item.duration;
+                experienceList.appendChild(listItem);
+            });
+        };
+    </script>
+</head>
+<body>
+    <h2>Опыт работы</h2>
+    <ul id="experience-list"></ul>
+</body>
+</html>

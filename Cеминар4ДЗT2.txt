@@ -1,0 +1,15 @@
+Task2
+
+SQL-запрос для создания такой таблицы:
+
+CREATE TABLE classmates (
+  id INT PRIMARY KEY,
+  name VARCHAR(255),
+  age INT,
+  address VARCHAR(255)
+);
+
+Чтобы добавлять данные о своих одногруппниках в эту таблицу можно использовать операторы SQL, такие как INSERT. Например:
+
+INSERT INTO classmates (id, name, age, address)
+VALUES (1, 'Иван', 20, 'Москва');
